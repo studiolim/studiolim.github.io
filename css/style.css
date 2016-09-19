@@ -11,9 +11,7 @@ body {
 .icon {
 	display: inline-block;
   position: relative;
-	background-image: url('./../image/icon-sprite.svg');
 	background-repeat: no-repeat;
-	background-size: 900%;
 	fill: #444444;
 }
 
@@ -21,10 +19,19 @@ body {
   width: 20px;
   height: 20px;
   top: 6px;
+  background-size: 100%;
 }
 
-.icon-heart-small {
-  background-position: -60px 0px;
+.icon-facebook {
+	background-image: url('./../image/icon-facebook.svg');
+}
+
+.icon-instagram {
+	background-image: url('./../image/icon-instagram.svg');
+}
+
+.icon-email {
+	background-image: url('./../image/icon-email.svg');
 }
 
 @-webkit-keyframes bugfix {
@@ -40,12 +47,11 @@ body {
 .redirect-text {
   display: block;
   text-align: center;
-  line-height: 30px;
 }
 
 .handmade-fiber-pic {
   display: block;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -54,13 +60,43 @@ body {
   height: auto;
 }
 
+.contact {
+  width: 300px;
+  margin: 20px auto;
+}
+
+.contact > i {
+  margin-right: 8px;
+}
 
 /* footer */
 footer {
   width: 100%;
-  bottom: -30px;
   position: absolute;
   color: rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 10px 0 5px;
+}
+
+/* mobile */
+@media (min-width: 300px) {
+  .redirect-text{
+    line-height: 60px;
+  }
+  footer {
+    height: 130px;
+  }
+}
+
+/* medium */
+@media (min-width: 600px) {
+  .redirect-text{
+    line-height: 30px;
+  }
+  footer {
+    height: 20px;
+  }
+  .contact {
+    display: none;
+  }
 }
