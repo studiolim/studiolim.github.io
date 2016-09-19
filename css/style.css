@@ -1,0 +1,66 @@
+/* application */
+body {
+  font-family: 'Noto Sans TC', 'Open Sans', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* icon */
+.icon {
+	display: inline-block;
+  position: relative;
+	background-image: url('./../image/icon-sprite.svg');
+	background-repeat: no-repeat;
+	background-size: 900%;
+	fill: #444444;
+}
+
+.icon-small {
+  width: 20px;
+  height: 20px;
+  top: 6px;
+}
+
+.icon-heart-small {
+  background-position: -60px 0px;
+}
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+
+/* Main content */
+.redirect-text {
+  display: block;
+  text-align: center;
+  line-height: 30px;
+}
+
+.handmade-fiber-pic {
+  display: block;
+  margin: 0 auto 30px;
+  width: 100%;
+}
+
+.handmade-fiber-pic > img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* footer */
+footer {
+  width: 100%;
+  bottom: -30px;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 10px 0 5px;
+}
