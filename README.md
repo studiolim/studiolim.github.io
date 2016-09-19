@@ -1,2 +1,2 @@
 # studiolim.github.io
-Studio lim page
+Hello there, please visit www.studiolim.co :)
